@@ -6,8 +6,35 @@
 }
 
 .container {
+  position: relative;
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6565e7), to(#af67e9));
-  background: linear-gradient(#6565e7, #af67e9);
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container__wrapper {
+  background: url("./images/bg-pattern-desktop.svg") no-repeat right 40rem top -7rem, url("./images/illustration-woman-online-desktop.svg") no-repeat left -5rem top 11rem;
+  position: relative;
+  height: 40rem;
+  width: 80rem;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+
+.container__wrapper__boxImage {
+  position: absolute;
+  right: 76rem;
+  top: 20rem;
 }
 /*# sourceMappingURL=style.css.map */

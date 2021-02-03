@@ -5,7 +5,35 @@
   margin: 0;
   padding: 0;
 }
+
 .container {
+  position: relative;
   height: 100vh;
-  background: linear-gradient($gradientBlue, $gradientViolet);
+  background: linear-gradient($gradientViolet, $gradientBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $fontSize;
+  font-family: $fontFamily;
+
+  &__wrapper {
+    background: url("./images/bg-pattern-desktop.svg") no-repeat right 40rem top -7rem,
+      url("./images/illustration-woman-online-desktop.svg") no-repeat left -5rem top 11rem;
+    position: relative;
+    height: 40rem;
+    width: 80rem;
+    background-color: #fff;
+    border-radius: 2rem;
+
+    &__boxImage {
+      position: absolute;
+      right: 76rem;
+      top: 20rem;
+    }
+
+    // &__womenImage {
+    //   position: absolute;
+    //   top: 10rem;
+    // }
+  }
 }
