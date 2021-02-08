@@ -17,23 +17,60 @@
   font-family: $fontFamily;
 
   &__wrapper {
-    background: url("./images/bg-pattern-desktop.svg") no-repeat right 40rem top -7rem,
-      url("./images/illustration-woman-online-desktop.svg") no-repeat left -5rem top 11rem;
+    background: url("./images/bg-pattern-desktop.svg") no-repeat right 42.5rem top -24.5rem / cover;
     position: relative;
-    height: 40rem;
+    height: 45rem;
     width: 80rem;
     background-color: #fff;
     border-radius: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(10px, 1fr));
 
-    &__boxImage {
+    &__boxSVG {
       position: absolute;
       right: 76rem;
-      top: 20rem;
+      top: 18rem;
     }
 
-    // &__womenImage {
-    //   position: absolute;
-    //   top: 10rem;
-    // }
+    &__womenSVG {
+      background: url("./images/illustration-woman-online-desktop.svg") no-repeat left -8rem top 4rem /
+        45rem 32rem;
+    }
+
+    &__text {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      &__item {
+        margin-bottom: 2rem;
+        margin-left: 1.5rem;
+        border-bottom: 1px solid $dividerColor;
+        padding-bottom: 1.8rem;
+        width: 30rem;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+
+        &:hover {
+          color: $softRed;
+        }
+
+        img {
+          height: 0.5rem;
+        }
+      }
+
+      &__title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 4rem;
+        margin-left: 1.5rem;
+      }
+    }
   }
 }
