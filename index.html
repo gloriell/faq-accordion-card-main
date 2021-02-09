@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Frontend Mentor | FAQ Accordion Card</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -39,7 +39,10 @@
           <div class="container__wrapper__text__title">FAQ</div>
           <div class="container__wrapper__text__item">
             <div class="container__wrapper__text__item__content">
-              <p class="container__wrapper__text__item__content__text">
+              <p
+                class="container__wrapper__text__item__content__text"
+                id="accordeon"
+              >
                 How many team members can I invite?
               </p>
               <img
@@ -49,7 +52,10 @@
               />
             </div>
             <div class="container__wrapper__text__item__accordeon">
-              <p class="container__wrapper__text__item__accordeon__text change">
+              <p
+                class="container__wrapper__text__item__accordeon__text change"
+                id="change"
+              >
                 You can invite up to 2 additional users on the Free plan. There
                 is no limit on team members for the Premium plan.
               </p>
