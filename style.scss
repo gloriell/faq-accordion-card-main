@@ -52,10 +52,9 @@
         width: 30rem;
         font-size: 1rem;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        text-align: center;
 
         &__content {
           display: flex;
@@ -78,6 +77,14 @@
             }
           }
         }
+
+        &__accordeon {
+          color-adjust: 1;
+
+          &__text {
+            padding-top: 2rem;
+          }
+        }
       }
 
       &__title {
@@ -88,4 +95,8 @@
       }
     }
   }
+}
+
+.change {
+  display: none;
 }
