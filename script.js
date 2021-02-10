@@ -1,7 +1,12 @@
-const accordeon=document.querySelector('#accordeon');
-const change=document.querySelector('#change');
+const accordeon = document.querySelectorAll(".container__wrapper__text__item");
+const change = document.querySelector(
+  ".container__wrapper__text__item__accordeon__text"
+);
 
-accordeon.addEventListener('click',() => {
-    change.classList.toggle("change");
-    console.log(accordeon);
+accordeon.forEach((accordeon) => {
+  accordeon.addEventListener("click", () => {
+    change.forEach((change) => {
+      change.classList.toggle("change");
+    });
+  });
 });
