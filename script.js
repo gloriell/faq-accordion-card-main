@@ -5,8 +5,6 @@ const change = document.querySelector(
 
 accordeon.forEach((accordeon) => {
   accordeon.addEventListener("click", () => {
-    change.forEach((change) => {
-      change.classList.toggle("change");
-    });
+    accordeon.classList.toggle("change");
   });
 });
