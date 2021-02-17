@@ -98,7 +98,7 @@
   width: 30rem;
 }
 
-.container__wrapper__text__item__content__text:hover {
+.container__wrapper__text__item__content:hover {
   color: #f47c57;
   cursor: pointer;
 }
@@ -126,11 +126,33 @@
   margin-left: 1.5rem;
 }
 
-.change {
+.hidden {
   display: none;
 }
 
-.active {
+.active img {
   display: block;
+  -webkit-transform: rotateZ(-180deg);
+          transform: rotateZ(-180deg);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
