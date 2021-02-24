@@ -2,6 +2,10 @@ const accordeon = document.querySelectorAll(".container__wrapper__text__item");
 const accordeonContent = document.querySelectorAll(
   ".container__wrapper__text__item__accordeon"
 );
+const titleImg = document.querySelector(
+  ".container__wrapper__text__item__content"
+);
+accordeonContent[1].classList.remove("hidden");
 
 accordeon.forEach((accordeon) => {
   const accordeonTitleRow = accordeon.firstElementChild;
@@ -14,8 +18,6 @@ accordeon.forEach((accordeon) => {
       } else {
         content.parentElement.classList.remove("active");
         content.classList.add("hidden");
-
-        console.log(content.parentElement);
       }
     });
   });

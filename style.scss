@@ -76,10 +76,11 @@
         }
 
         &__accordeon {
-          color-adjust: 1;
+          color-adjust: 3;
 
           &__text {
             padding-top: 2rem;
+            color: $contentColor;
           }
         }
       }
@@ -104,6 +105,14 @@
   transition: 0.5s ease-in-out;
 }
 
+.active .container__wrapper__text__item__accordeon {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.active .container__wrapper__text__item__content {
+  font-weight: bold;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -112,3 +121,5 @@
     opacity: 1;
   }
 }
+
+@import "media";
